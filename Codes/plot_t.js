@@ -140,7 +140,7 @@ function buildPlot(stock) {
     };
 
     Plotly.newPlot("plot", data, layout);
-    Plotly.newPlot("miniPlot", data1, layout);
+    Plotly.newPlot("volumeplot", data1, layout);
   });
 }
 
