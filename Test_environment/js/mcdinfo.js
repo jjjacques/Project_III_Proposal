@@ -20,14 +20,14 @@
       Handle: d.Handle,
     };
   }).then(function(data) {
-  console.log(data);
+  // console.log(data[0].Description);
   
-  d3.select("#descr_info").insert("p").text(data[0].Description);
-  d3.select("#tweets").insert("p").text(data[0].Articles1);
-  d3.select("#tweets").insert("p").text(data[0].Articles2);
-  d3.select("#tweets").insert("p").text(data[0].Articles3);
-  d3.select("#tweets").insert("p").text(data[0].Articles4);
-  d3.select("#tweets").insert("p").text(data[0].Articles5);
+  d3.select("#descr_info").insert("p").text(data[5].Description);
+  d3.select("#tweets").insert("p").text(data[5].Articles1);
+  d3.select("#tweets").insert("p").text(data[5].Articles2);
+  d3.select("#tweets").insert("p").text(data[5].Articles3);
+  d3.select("#tweets").insert("p").text(data[5].Articles4);
+  d3.select("#tweets").insert("p").text(data[5].Articles5);
 
   // var divs = d3.select('#parent').selectAll('p').data(data).enter().append('div');
   
