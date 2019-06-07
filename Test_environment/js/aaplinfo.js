@@ -31,6 +31,6 @@
 
   // var divs = d3.select('#parent').selectAll('p').data(data).enter().append('div');
   
-  // buildPlot("aapl");
+  buildPlot("aapl");
 
   }); 
