@@ -93,11 +93,11 @@ function buildPlot(stock) {
     var data1 = [trace3];
 
     var layout = {
-      title: `${stock} closing prices`,
+      title: `${stock} performance``,
       xaxis: {
         range: [startDate, endDate],
         type: "date",
-        rangeslider: {visible:true}
+        rangeslider: {visible:false}
       },
       
       yaxis: {
