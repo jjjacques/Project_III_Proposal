@@ -3,14 +3,14 @@
 $(document).ready(function(){
  $('#load_data').click(function(){
   $.ajax({
-   url:"assets/csv/AAPL_df.csv",
-   url2:"assets/csv/CTSH_df.csv",
-   url3:"assets/csv/FB_df.csv",
-   url4:"assets/csv/GOOGL_df.csv",
-   url5:"assets/csv/IBM_df.csv",
-   url6:"assets/csv/MCD_df.csv",
-   url7:"assets/csv/MSFT_df.csv",
-   url8:"assets/csv/TSLA_df.csv",
+   url:"assets/csv/Final_stock_details.csv",
+//    url2:"assets/csv/CTSH_df.csv",
+//    url3:"assets/csv/FB_df.csv",
+//    url4:"assets/csv/GOOGL_df.csv",
+//    url5:"assets/csv/IBM_df.csv",
+//    url6:"assets/csv/MCD_df.csv",
+//    url7:"assets/csv/MSFT_df.csv",
+//    url8:"assets/csv/TSLA_df.csv",
    dataType:"text",
    success:function(data)
    {
@@ -34,7 +34,7 @@ $(document).ready(function(){
      table_data += '</tr>';
     }
     table_data += '</table>';
-    $('#stock_table').html(table_data);
+    $('.stock_table').html(table_data);
    }
   });
  });
